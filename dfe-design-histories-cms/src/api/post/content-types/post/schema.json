@@ -4,7 +4,8 @@
   "info": {
     "singularName": "post",
     "pluralName": "posts",
-    "displayName": "Post"
+    "displayName": "Post",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -25,8 +26,9 @@
       "type": "richtext",
       "required": true
     },
-    "Publication_date_override": {
-      "type": "date"
+    "Publication_date": {
+      "type": "date",
+      "required": true
     },
     "Slug": {
       "type": "uid",
