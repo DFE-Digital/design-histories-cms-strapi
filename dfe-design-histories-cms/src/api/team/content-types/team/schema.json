@@ -30,6 +30,11 @@
       "type": "uid",
       "targetField": "Title",
       "required": true
+    },
+    "Description": {
+      "type": "text",
+      "required": true,
+      "maxLength": 250
     }
   }
 }
