@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "service_pages",
+  "info": {
+    "singularName": "service-page",
+    "pluralName": "service-pages",
+    "displayName": "Site page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "maxLength": 70
+    },
+    "Body": {
+      "type": "richtext",
+      "required": true
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "Title",
+      "required": true
+    }
+  }
+}
