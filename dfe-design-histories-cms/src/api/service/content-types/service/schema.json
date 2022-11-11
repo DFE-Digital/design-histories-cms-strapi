@@ -43,6 +43,9 @@
     "Enabled": {
       "type": "boolean",
       "required": true
+    },
+    "Password": {
+      "type": "string"
     }
   }
 }
