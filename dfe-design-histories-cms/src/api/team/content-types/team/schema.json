@@ -39,6 +39,20 @@
     },
     "Bio": {
       "type": "richtext"
+    },
+    "Portfolio": {
+      "type": "enumeration",
+      "enum": [
+        "Families",
+        "Funding",
+        "Schools",
+        "Skills",
+        "Regions",
+        "ESFA",
+        "TRA",
+        "STA"
+      ],
+      "required": true
     }
   }
 }
