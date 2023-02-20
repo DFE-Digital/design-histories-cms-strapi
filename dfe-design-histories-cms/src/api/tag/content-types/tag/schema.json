@@ -4,7 +4,8 @@
   "info": {
     "singularName": "tag",
     "pluralName": "tags",
-    "displayName": "Tags"
+    "displayName": "Tags",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -14,6 +15,11 @@
     "Tag": {
       "type": "string",
       "unique": true,
+      "required": true
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "Tag",
       "required": true
     }
   }
