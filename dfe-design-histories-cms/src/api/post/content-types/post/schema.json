@@ -40,6 +40,18 @@
       "relation": "manyToOne",
       "target": "api::service.service",
       "inversedBy": "posts"
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag.tag"
+    },
+    "FeaturedImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }
