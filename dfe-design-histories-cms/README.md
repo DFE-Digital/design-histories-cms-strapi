@@ -2,6 +2,23 @@
 
 Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html) (CLI) which lets you scaffold and manage your project in seconds.
 
+## Config options
+
+We use Cloudcube for image storage and Postgres for the CMS database. See Strapi for other database and media storage options and config.
+
+In your .env file, add the following keys:
+
+HOST=0.0.0.0
+PORT=1337
+APP_KEYS=
+API_TOKEN_SALT=
+ADMIN_JWT_SECRET=
+JWT_SECRET=
+DATABASE_URL= # URL For your postgres database - See strapi guidance for databases
+CLOUDCUBE_URL= # We use cloudcube for storing images - See strapi guidance for image file storage options
+CLOUDCUBE_ACCESS_KEY_ID=
+CLOUDCUBE_SECRET_ACCESS_KEY=
+
 ### `develop`
 
 Start your Strapi application with autoReload enabled. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-develop)
