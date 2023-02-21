@@ -8,6 +8,7 @@ We use Cloudcube for image storage and Postgres for the CMS database. See Strapi
 
 In your .env file, add the following keys:
 
+```
 HOST=0.0.0.0
 PORT=1337
 APP_KEYS=
@@ -18,6 +19,7 @@ DATABASE_URL= # URL For your postgres database - See strapi guidance for databas
 CLOUDCUBE_URL= # We use cloudcube for storing images - See strapi guidance for image file storage options
 CLOUDCUBE_ACCESS_KEY_ID=
 CLOUDCUBE_SECRET_ACCESS_KEY=
+```
 
 ### `develop`
 
