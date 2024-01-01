@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "design_manual_jobs",
+  "info": {
+    "singularName": "design-manual-job",
+    "pluralName": "design-manual-jobs",
+    "displayName": "Design Manual Jobs",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Role": {
+      "type": "enumeration",
+      "enum": [
+        "Service Designer",
+        "Senior Service Designer",
+        "Lead Service Designer",
+        "Interaction Designer",
+        "Senior Interaction Designer",
+        "Lead Interaction Designer",
+        "Content Designer",
+        "Senior Content Designer",
+        "Lead Content Designer"
+      ],
+      "required": true
+    },
+    "RolesAdvertised": {
+      "type": "integer",
+      "required": true
+    },
+    "CSJURL": {
+      "type": "string",
+      "required": true
+    },
+    "Locations": {
+      "type": "enumeration",
+      "enum": [
+        "Bristol, Coventry, Darlington, Leeds, London (Westminster), Manchester, Nottingham, Sheffield",
+        "Bristol, Coventry, Darlington, Leeds, Manchester, Nottingham, Sheffield",
+        "Coventry, Manchester, Sheffield"
+      ],
+      "required": true,
+      "default": "Coventry, Manchester, Sheffield"
+    },
+    "Closes": {
+      "type": "datetime"
+    }
+  }
+}
